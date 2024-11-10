@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLID ENGINEERING</title>
+    <meta
+      name="description"
+      content="Solid Engineering offers high-quality welding, lathe, and fabrication services in Ambattur, Chennai. Contact us for your project needs."
+    />
+    <meta
+      name="keywords"
+      content="welding, lathe, fabrication, Solid Engineering, Ambattur, Chennai"
+    />
+
+    <!-- Adding Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <link rel="stylesheet" href="./asset/css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- Header Start  -->
+    <header class="header" data-scroll-container>
+      <!-- Header Navigation Start -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light main-menu fixed-top"
+      >
+        <div class="container">
+          <!-- Logo -->
+          <a href="index.html" class="navbar-brand" aria-label="Leadsbee Home">
+            <img src="./asset/image/Logo.png" alt="Leadsbee Logo" />
+          </a>
+
+          <!-- Navbar Toggler for Mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+          </button>
+
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto text-center">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="./project.html" class="nav-link">Project</a>
+              </li>
+              <li class="nav-item">
+                <a href="./service.html" class="nav-link">Service</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact-us.html" class="nav-link">
+                  <button class="nav-button">
+                    Contact Us <i class="fas fa-angle-right"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Header Navigation End -->
+    </header>
+    <!-- Header End -->
+
+    <section class="header contact-header" style="padding-top: 100px">
+      <!-- Header Banner Start  -->
+      <div class="container header-content">
+        <div class="row h-100">
+          <div class="col-md-6 centralize">
+            <div class="left-content">
+              <h2>Our <span class="highlight">Contacts</span></h2>
+              <p>Home / Contact Us</p>
+            </div>
+          </div>
+          <div class="col-md-6 centralize">
+            <div class="right-content">
+              <img src="./asset/image/Group 1387.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company Details Start -->
+    <section class="company-details section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3>Company Name: Solid Engineering</h3>
+            <p>Address: Ambattur, Chennai, India</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Company Details End -->
+
+    <!-- Company Offices Start  -->
+    <section class="offices section-padding"></section>
+    <!-- Company Offices End  -->
+
+    <!-- Project Contact Start  -->
+    <section class="project-contact section-padding">
+      <div class="container">
+        <!-- Toast  -->
+        <?= $success; ?>
+        <div class="row mt-5">
+          <h2 class="text-center w-100 service-heading">
+            Tell Us About Your Project
+          </h2>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <form action="" method="post" id="project-details">
+              <div class="form-group">
+                <label for="name"></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <span class="icon fa fa-user fa-lg"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email"></label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Your E-mail"
+                  required
+                />
+                <span class="icon fa fa-envelope fa-lg"></span>
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  rows="5"
+                  cols="30"
+                  id="msg"
+                  name="msg"
+                  placeholder="Message"
+                  style="width: 100%"
+                ></textarea>
+                <span class="icon-textarea fa fa-edit fa-lg"></span>
+              </div>
+
+              <div class="text-center">
+                <input
+                  type="submit"
+                  name="submit"
+                  value="Submit"
+                  class="btn btn-default"
+                />
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-6 centralize">
+            <div class="contact-image">
+              <img
+                src="./asset/image/Group 4408.png"
+                alt=""
+                class="img-fluid ml-5"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project Contact End  -->
+
+    <!-- Partner Start  -->
+    <section class="partners section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center partner-heading">
+              Business Partner Trusted
+            </h2>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+            <div class="partner">
+              <img src="./asset/image/A (3).png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+            <div class="partner">
+              <img src="./asset/image/A (4).png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+            <div class="partner">
+              <img src="./asset/image/A (2).png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+            <div class="partner">
+              <img src="./asset/image/A (1).png" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Partner End  -->
+
+    <!-- Footer Start -->
+    <footer class="footer section-padding bg-dark text-light">
+      <style>
+        .footer ul li a {
+          color: #ffffff !important;
+        }
+      </style>
+      <div class="container">
+        <div class="row pb-4">
+          <!-- Logo and Company Info -->
+          <div class="col-md-4 mb-4">
+            <div class="footer-widget">
+              <img
+                src="./asset/cs-img/logo-sm.png"
+                alt="Solid Engineering Logo"
+                class="mb-3"
+              />
+              <p>
+                <strong>SOLID ENGINEERING</strong>, based in Ambattur, Chennai,
+                specializes in high-quality fabrication and manufacturing
+                solutions. From dust collectors to precision welding, we deliver
+                engineering excellence tailored to your needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div class="col-md-2 mb-4">
+            <div class="footer-widget">
+              <h4>Our Services</h4>
+              <ul class="list-unstyled">
+                <li><a href="./service.html">Welding</a></li>
+                <li><a href="./service.html">Lathe Work</a></li>
+                <li><a href="./service.html">Sandblasting</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Useful Links -->
+          <div class="col-md-2 mb-4">
+            <div class="footer-widget">
+              <h4>Useful Links</h4>
+              <ul class="list-unstyled">
+                <li><a href="./project.html">Projects</a></li>
+                <li><a href="./contact-us.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="col-md-4 mb-4">
+            <div class="footer-widget">
+              <h4>Contact Us</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fa fa-map-marker"></i> Ambattur, Chennai, India
+                </li>
+                <li><i class="fa fa-phone"></i> +91 123 456 7890</li>
+                <li>
+                  <i class="fa fa-envelope"></i>
+                  <a href="mailto:info@solidengineering.com"
+                    >info@solidengineering.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3oAiL2K4fGp0wSKoIh+g1eZ5zF5u1g5L/3J0AdDyl8mIN/zptdFIZePZPv0lKx"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+      integrity="sha384-Ip0qDABRl+f5O3kR1I1b4O3Z1DzGn8eD8ugFYRxck5RewIjfOmeLmc8kG11m3TzD"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4cxG2YtI3aN2XHqVo44gG9HnhzW5Hq7uqfoP1n0qEvFqN+VimqjMEdN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./asset/js/main.js"></script>
+  </body>
+</html>
