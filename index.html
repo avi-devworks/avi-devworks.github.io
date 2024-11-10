@@ -110,15 +110,15 @@
       <!-- Header Navigation End -->
     </header>
 
-    <section
+    <!-- <section
       class="header"
       data-scroll-container
       aria-labelledby="hero-heading"
     >
-      <!-- Header Banner Start -->
+
       <div class="container header-content">
-        <div class="row">
-          <!-- Left Content with Heading, Description, and CTA -->
+        <div class="row" style="height: 100vh;">
+
           <div class="col-md-6 centralize">
             <div class="left-content">
               <h1 id="hero-heading">Solid Engineering</h1>
@@ -144,21 +144,106 @@
             </div>
           </div>
 
-          <!-- Right Content with Image -->
           <div class="col-md-6">
             <div class="right-content">
               <img
                 src="./asset/image/Header vector.svg"
                 alt="Illustration representing Solid Engineering services"
                 loading="lazy"
-                width="500"
-                height="auto"
+                width="300"
+                height="300"
               />
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
+
+    <section
+    class="header hero-section"
+    data-scroll-container
+    aria-labelledby="hero-heading"
+>
+    <div class="hero-container" >
+
+        <div class="hero-section-1">
+            <h1>Solid Engineering</h1>
+            <p>
+                We focus on providing custom welding and lathe services that
+                cater to your unique engineering needs. Our experienced team
+                blends precision and creativity to deliver personalized
+                solutions that boost efficiency and quality. Rely on us to
+                transform your distinct projects into reality with our expertise
+                and dedication.
+            </p>
+            <div class="call-to-action">
+                <a
+                    href="contact-us.html"
+                    aria-label="Work with Solid Engineering - Contact Us"
+                >
+                    <button class="cta-button">
+                        Work With Us
+                        <i class="fas fa-angle-right" aria-hidden="true"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-header-img">
+            <img
+                src="./asset/image/Header vector.svg"
+                alt="Illustration representing Solid Engineering services"
+                loading="lazy"
+                width="500"
+                height="500"
+            />
+        </div>
+
+    </div>
+</section>
+
+<style>
+
+
+    .hero-container {
+        display: flex;
+        flex-direction: row;
+
+        padding: 10% 5%;
+    }
+    .hero-section-1{
+      padding-top: 10%;
+    }
+
+    /* For mobile and tablet screens: Change the layout to column */
+    @media (max-width: 768px) {
+      .hero-section{
+        padding-top: 50%;
+      }
+        .hero-container {
+            flex-direction: column;
+            text-align: center;
+            height: 100vh;
+
+        }
+        .hero-header-img{
+          display: none;
+        }
+
+        .hero-container > div {
+            width: 100%;
+            padding-top: 5%;
+
+        }
+
+        .cta-button {
+            margin-top: 10px; 
+        }
+
+    }
+</style>
+
 
     <!-- Portfolio Start  -->
     <section
@@ -917,10 +1002,10 @@
                 <br />
                 <i class="fab fa-whatsapp" aria-hidden="true"></i>
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/918667304074"
                   target="_blank"
                   title="Contact on WhatsApp"
-                  >+91-9876543210</a
+                  >+91-8667304074</a
                 >
               </p>
               <ul class="list-inline">
@@ -965,17 +1050,10 @@
         <div class="row mb-4">
           <div class="col-md-12">
             <h4 class="text-center">Our Location</h4>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.0238345078393!2d78.1445613142329!3d13.105377990768496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d00a6b6ebac29%3A0x517e2f5c7a0e1105!2sAmbattur%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1617744914320!5m2!1sen!2sin"
-              width="100%"
-              height="250"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              class="rounded"
-              aria-label="Google Maps Location of Solid Engineering"
-            >
-            </iframe>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.015592280243!2d80.13389007512502!3d13.098198287228957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52637c5355cdc5%3A0xc619be276013c791!2sOlympic%20Fitness%20Center!5e0!3m2!1sen!2sin!4v1731234235460!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="true" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
           </div>
         </div>
 
@@ -983,8 +1061,8 @@
         <div class="row" style="border-top: 1px solid #555; padding-top: 15px">
           <div class="col-md-8">
             <p class="mb-0">
-              &copy; <span id="year"></span> SOLID ENGINEERING, Ambattur,
-              Chennai. All Rights Reserved.
+              &copy; <span id="year"></span> SOLID ENGINEERING, Street Number 39, TNHB Colony, Dharma Nagar, Ayappakkam, Chennai, Tamil Nadu 600077,
+ All Rights Reserved.
             </p>
           </div>
           <div class="col-md-4 text-right">

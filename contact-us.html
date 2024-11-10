@@ -101,16 +101,83 @@
     </section>
 
     <!-- Company Details Start -->
-    <section class="company-details section-padding">
-      <div class="container">
+    <section class="company-details section-padding" style="background-color: #ffffff; padding: 40px 0;">
+      <div class="container" style="padding-top: 150px;">
+        <!-- Company Name and Address -->
         <div class="row">
           <div class="col-md-12 text-center">
-            <h3>Company Name: Solid Engineering</h3>
-            <p>Address: Ambattur, Chennai, India</p>
+            <h3 style="font-size: 2.5rem; font-weight: bold; color: #333; margin-bottom: 20px;">Solid Engineering</h3>
+            <p style="font-size: 1.25rem; color: #555; line-height: 1.6; max-width: 800px; margin: 0 auto;">
+              Address: 34XP+7HG, Street Number 39, TNHB Colony, Dharma Nagar, Ayappakkam, Chennai, Tamil Nadu 600077
+            </p>
           </div>
+        </div>
+    
+        <!-- WhatsApp Contact Section -->
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
+          <i class="fab fa-whatsapp" aria-hidden="true" style="font-size: 6rem; margin-right: 15px; color: #25D366;"></i>
+          <a
+            href="https://wa.me/918667304074"
+            target="_blank"
+            title="Contact on WhatsApp"
+            style="font-size: 2rem; font-weight: bold; color: #25D366; text-decoration: none; transition: color 0.3s ease-in-out;"
+          >
+            +91-8667304074
+          </a>
         </div>
       </div>
     </section>
+    
+    <!-- Additional Styling for Enhancements -->
+    <style>
+      /* Style for the container and text */
+      .company-details {
+        font-family: 'Arial', sans-serif;
+        background-color: #ffffff;
+        padding: 60px 20px;
+      }
+    
+      .company-details h3 {
+        font-size: 2.5rem;
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+    
+      .company-details p {
+        font-size: 1.2rem;
+        color: #666;
+        line-height: 1.8;
+        margin: 10px 0;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .company-details a {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #25D366;
+        text-decoration: none;
+        padding-left: 15px;
+      }
+    
+      .company-details a:hover {
+        color: #128c7e; /* Darker green on hover */
+        transform: scale(1.1);
+      }
+    
+      /* WhatsApp icon and text styles */
+      .company-details .fa-whatsapp {
+        color: #25D366;
+        transition: transform 0.3s ease;
+      }
+    
+      .company-details .fa-whatsapp:hover {
+        transform: scale(1.1);
+      }
+    </style>
+    
     <!-- Company Details End -->
 
     <!-- Company Offices Start  -->
@@ -232,8 +299,12 @@
     </section>
     <!-- Partner End  -->
 
+
     <!-- Footer Start -->
-    <footer class="footer section-padding bg-dark text-light">
+    <footer
+      class="footer section-padding bg-dark text-light"
+      aria-label="Footer Section"
+    >
       <style>
         .footer ul li a {
           color: #ffffff !important;
@@ -248,6 +319,7 @@
                 src="./asset/cs-img/logo-sm.png"
                 alt="Solid Engineering Logo"
                 class="mb-3"
+                loading="lazy"
               />
               <p>
                 <strong>SOLID ENGINEERING</strong>, based in Ambattur, Chennai,
@@ -263,45 +335,137 @@
             <div class="footer-widget">
               <h4>Our Services</h4>
               <ul class="list-unstyled">
-                <li><a href="./service.html">Welding</a></li>
-                <li><a href="./service.html">Lathe Work</a></li>
-                <li><a href="./service.html">Sandblasting</a></li>
+                <li>
+                  <a href="#" title="Fabrication Work">Fabrication Work</a>
+                </li>
+                <li>
+                  <a href="#" title="Dust Collection Solutions"
+                    >Dust Collection Solutions</a
+                  >
+                </li>
+                <li><a href="#" title="Custom Welding">Custom Welding</a></li>
+                <li>
+                  <a href="#" title="Machining & Lathe">Machining & Lathe</a>
+                </li>
               </ul>
             </div>
           </div>
 
-          <!-- Useful Links -->
-          <div class="col-md-2 mb-4">
-            <div class="footer-widget">
-              <h4>Useful Links</h4>
-              <ul class="list-unstyled">
-                <li><a href="./project.html">Projects</a></li>
-                <li><a href="./contact-us.html">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Contact Information -->
+          <!-- Contact Us and Social Links -->
           <div class="col-md-4 mb-4">
             <div class="footer-widget">
               <h4>Contact Us</h4>
-              <ul class="list-unstyled">
-                <li>
-                  <i class="fa fa-map-marker"></i> Ambattur, Chennai, India
-                </li>
-                <li><i class="fa fa-phone"></i> +91 123 456 7890</li>
-                <li>
-                  <i class="fa fa-envelope"></i>
-                  <a href="mailto:info@solidengineering.com"
-                    >info@solidengineering.com</a
+              <p>
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                Ambattur, Chennai, India
+                <br />
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:info@solidengineering.com" title="Email Us"
+                  >info@solidengineering.com</a
+                >
+                <br />
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                <a
+                  href="https://wa.me/918667304074"
+                  target="_blank"
+                  title="Contact on WhatsApp"
+                  >+91-8667304074</a
+                >
+              </p>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    title="Facebook"
+                    aria-label="Follow us on Facebook"
                   >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" title="Twitter" aria-label="Follow us on Twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    title="Instagram"
+                    aria-label="Follow us on Instagram"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    title="LinkedIn"
+                    aria-label="Follow us on LinkedIn"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+
+        <!-- Map Section -->
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <h4 class="text-center">Our Location</h4>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.015592280243!2d80.13389007512502!3d13.098198287228957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52637c5355cdc5%3A0xc619be276013c791!2sOlympic%20Fitness%20Center!5e0!3m2!1sen!2sin!4v1731234235460!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="true" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row" style="border-top: 1px solid #555; padding-top: 15px">
+          <div class="col-md-8">
+            <p class="mb-0">
+              &copy; <span id="year"></span> SOLID ENGINEERING, Street Number 39, TNHB Colony, Dharma Nagar, Ayappakkam, Chennai, Tamil Nadu 600077,
+ All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-md-4 text-right">
+            <div class="social-icons">
+              <a
+                href="#"
+                class="mr-2"
+                title="Messenger"
+                aria-label="Contact us on Messenger"
+              >
+                <i class="fab fa-facebook-messenger"></i>
+              </a>
+              <a
+                href="mailto:info@solidengineering.com"
+                class="mr-2"
+                title="Email Us"
+                aria-label="Email Solid Engineering"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://wa.me/919876543210"
+                target="_blank"
+                class="mr-2"
+                title="WhatsApp"
+                aria-label="Contact us on WhatsApp"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+    <!-- Footer End -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <!-- Footer End -->
 
     <!-- Scripts -->
