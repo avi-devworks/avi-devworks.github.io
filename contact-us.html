@@ -184,84 +184,81 @@
     <section class="offices section-padding"></section>
     <!-- Company Offices End  -->
 
-    <!-- Project Contact Start  -->
-    <section class="project-contact section-padding">
-      <div class="container">
-        <!-- Toast  -->
-        <?= $success; ?>
-        <div class="row mt-5">
-          <h2 class="text-center w-100 service-heading">
-            Tell Us About Your Project
-          </h2>
-        </div>
-      </div>
+  <!-- Project Contact Start -->
+<section class="project-contact section-padding">
+  <div class="container">
+    <!-- Toast -->
+    <div id="toast" style="display: none; text-align: center; color: green;"></div>
+    <div class="row mt-5">
+      <h2 class="text-center w-100 service-heading">
+        Tell Us About Your Project
+      </h2>
+    </div>
+  </div>
 
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-6">
-            <form action="" method="post" id="project-details">
-              <div class="form-group">
-                <label for="name"></label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
-                <span class="icon fa fa-user fa-lg"></span>
-              </div>
-
-              <div class="form-group">
-                <label for="email"></label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="Your E-mail"
-                  required
-                />
-                <span class="icon fa fa-envelope fa-lg"></span>
-              </div>
-
-              <div class="form-group">
-                <textarea
-                  rows="5"
-                  cols="30"
-                  id="msg"
-                  name="msg"
-                  placeholder="Message"
-                  style="width: 100%"
-                ></textarea>
-                <span class="icon-textarea fa fa-edit fa-lg"></span>
-              </div>
-
-              <div class="text-center">
-                <input
-                  type="submit"
-                  name="submit"
-                  value="Submit"
-                  class="btn btn-default"
-                />
-              </div>
-            </form>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <form id="project-details">
+          <div class="form-group">
+            <label for="name"></label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <span class="icon fa fa-user fa-lg"></span>
           </div>
 
-          <div class="col-md-6 centralize">
-            <div class="contact-image">
-              <img
-                src="./asset/image/Group 4408.png"
-                alt=""
-                class="img-fluid ml-5"
-              />
-            </div>
+          <div class="form-group">
+            <label for="email"></label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Your E-mail"
+              required
+            />
+            <span class="icon fa fa-envelope fa-lg"></span>
           </div>
+
+          <div class="form-group">
+            <textarea
+              rows="5"
+              cols="30"
+              id="msg"
+              name="msg"
+              placeholder="Message"
+              style="width: 100%"
+              required
+            ></textarea>
+            <span class="icon-textarea fa fa-edit fa-lg"></span>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-6 centralize">
+        <div class="contact-image">
+          <img
+            src="./asset/image/Group 4408.png"
+            alt="Contact"
+            class="img-fluid ml-5"
+          />
         </div>
       </div>
-    </section>
-    <!-- Project Contact End  -->
+    </div>
+  </div>
+</section>
+<!-- Project Contact End -->
+
 
     <!-- Partner Start  -->
     <section class="partners section-padding">
@@ -469,6 +466,7 @@
     <!-- Footer End -->
 
     <!-- Scripts -->
+     <script src="./asset/js/contact.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3oAiL2K4fGp0wSKoIh+g1eZ5zF5u1g5L/3J0AdDyl8mIN/zptdFIZePZPv0lKx"
