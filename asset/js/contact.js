@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const formData = { name, email, message };
   
       try {
-        const response = await fetch("https://6tw7rzetnlijycuooius35misu0ljcjw.lambda-url.us-east-1.on.aws/", {
+        const response = await fetch("https://b8b6pa6lcl.execute-api.us-east-1.amazonaws.com/prod/solid-eng-mailer", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
